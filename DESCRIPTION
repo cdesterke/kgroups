@@ -1,0 +1,24 @@
+Package: kgroups
+Type: Package
+Title: K-Means Clustering with Automated Optimization and Quality Control
+Version: 1.0.0
+Author: Christophe Desterke
+Maintainer: Christophe Desterke <christophe.desterke@gmail.com>
+Description: Provides a streamlined workflow for k-means clustering, including 
+    automated optimization of the number of clusters and comprehensive quality 
+    control metrics. Each optimization step generates modern, publication-ready 
+    visualizations using 'ggplot2'.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    ggplot2,
+    dplyr,
+    stats,
+    cluster,
+    factoextra,
+    patchwork,
+    fpc,
+    pheatmap,
+    tidyr
+RoxygenNote: 7.3.2
