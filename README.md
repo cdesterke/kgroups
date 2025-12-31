@@ -41,3 +41,15 @@ qc_nstart(mat_scaled, k = 3)
 ```
 
 ![res](https://github.com/cdesterke/kgroups/blob/main/03_qc_nstart.png)
+
+
+## kmeans optimized
+```r
+res <- run_kmeans_with_pca(mat_scaled, k = 3, palette = "Set1", base_size = 16)
+res$pca_plot
+res$clusters
+```
+
+![res](https://github.com/cdesterke/kgroups/blob/main/04_run_kmeans_with_pca.png)
+
+
