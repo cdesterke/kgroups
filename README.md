@@ -59,3 +59,12 @@ heatmap_kmeans(mat_scaled, res$clusters)
 ```
 
 ![res](https://github.com/cdesterke/kgroups/blob/main/05_heatmap_kmeans.png)
+
+
+## QC silhouette for optimal k
+```r
+km <- kmeans(mat_scaled, centers = 3, nstart = 50)
+silhouette_kmeans(mat_scaled, km$cluster, palette = "Set1", base_size = 16)
+```
+
+![res](https://github.com/cdesterke/kgroups/blob/main/06_silhouette_kmeans.png)
