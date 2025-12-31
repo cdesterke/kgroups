@@ -52,4 +52,10 @@ res$clusters
 
 ![res](https://github.com/cdesterke/kgroups/blob/main/04_run_kmeans_with_pca.png)
 
+## heatmap with unsupervised clustering
+```r
 
+heatmap_kmeans(mat_scaled, res$clusters)
+```
+
+![res](https://github.com/cdesterke/kgroups/blob/main/05_heatmap_kmeans.png)
