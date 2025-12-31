@@ -9,7 +9,7 @@ library(devtools)
 install_github("cdesterke/kgroups")
 ```
 
-## Over representation analysis
+## Optimal k for number of clusters
 
 ```r
 library(kgroups)
@@ -21,3 +21,15 @@ res$plots
 ```
 
 ![res](https://github.com/cdesterke/kgroups/blob/main/01_train_kmeans_qc.png)
+
+
+## bootstrap at optimal k number
+
+```r
+mat_scaled <- scale(t(mat))
+res <- bootstrap_stability_kmeans(mat_scaled, k = 3)
+res$plot
+res
+```
+
+![res](https://github.com/cdesterke/kgroups/blob/main/02_bootstrap_stability_kmeans.png)
