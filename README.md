@@ -77,3 +77,12 @@ qc$plot
 ```
 
 ![res](https://github.com/cdesterke/kgroups/blob/main/07_qc_geometric_separation.png)
+
+
+## Sample profiles
+```r
+qc_sample_profiles(mat_scaled, km$cluster, feature_abbrev = 16)
+
+```
+
+![res](https://github.com/cdesterke/kgroups/blob/main/08_qc_sample_profiles.png)
