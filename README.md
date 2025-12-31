@@ -68,3 +68,12 @@ silhouette_kmeans(mat_scaled, km$cluster, palette = "Set1", base_size = 16)
 ```
 
 ![res](https://github.com/cdesterke/kgroups/blob/main/06_silhouette_kmeans.png)
+
+
+## QC geometric separation
+```r
+qc <- qc_geometric_separation(mat_scaled, k_range = 2:10, optimal_k = 3)
+qc$plot
+```
+
+![res](https://github.com/cdesterke/kgroups/blob/main/07_qc_geometric_separation.png)
