@@ -33,3 +33,11 @@ res
 ```
 
 ![res](https://github.com/cdesterke/kgroups/blob/main/02_bootstrap_stability_kmeans.png)
+
+
+## stability of nstart parameter of kmeans fonction
+```r
+qc_nstart(mat_scaled, k = 3)
+```
+
+![res](https://github.com/cdesterke/kgroups/blob/main/03_qc_nstart.png)
