@@ -14,7 +14,9 @@ install_github("cdesterke/kgroups")
 ```r
 library(kgroups)
 data(mat)
-res <- train_kmeans_qc(mat)
+# transpose and scaled the matrix (featuresXsamples)
+mat_scaled <- scale(t(mat))
+res <- train_kmeans_qc(mat_scaled)
 res$optimal_k
 res$clusters
 res$plots
@@ -26,7 +28,7 @@ res$plots
 ## bootstrap at optimal k number
 
 ```r
-mat_scaled <- scale(t(mat))
+
 res <- bootstrap_stability_kmeans(mat_scaled, k = 3)
 res$plot
 res
